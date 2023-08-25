@@ -30,10 +30,13 @@ pipeline {
                 }
             }
         }
-        stage ('Packaging the output files') {
+        stage ('Deliver') {
             steps {
                  input(message: 'Proceed to the next step?', ok: 'Continue')
-                zip dir: env.ZIP_SOURCE_DIR, exclude: '', glob: '', zipFile: env.ZIP_OUTFILE, overwrite: true
+                zip dir: env.ZIP_SOURCE_DIR, 
+                    file: 'application.py' 'requirements.txt' 'test_app.py' 'urls.json', 
+                    glob: 'static/*' 'templates/*', 
+                    zipFile: env.ZIP_OUTFILE, overwrite: true
             }
         }
     }
