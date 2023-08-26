@@ -87,7 +87,7 @@ The following files are needed to run this deployment:
 
 # System Diagram:
 
-CI/CD Pipeline Architecture [Link](https://github.com/kaedmond24/c4_deployment_1/blob/main/c4_deployment1_architecture.png)
+CI/CD Pipeline Architecture [Link](https://github.com/kaedmond24/python_url_shortener_app_deployment_2/blob/main/c4_deployment_2.png)
 
 # Issues:
 
