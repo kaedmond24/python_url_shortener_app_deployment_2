@@ -34,8 +34,7 @@ pipeline {
             steps {
                  input(message: 'Proceed to the next step?', ok: 'Continue')
                 zip dir: env.ZIP_SOURCE_DIR,
-                    file: 'application.py, test_app.py, requirements.txt, urls.json',
-                    glob: 'static/**, templates/**', 
+                    glob: 'static/**, templates/**, *.py, *.txt, *.json', 
                     zipFile: env.ZIP_OUTFILE, overwrite: true
             }
         }
