@@ -8,16 +8,16 @@ This deployment uses Jenkins to build, test, and deliver a python URL shortening
 
 The following files are needed to run this deployment:
 
-    - `application.py` The main python application file
-    - `test_app.py` Tests used to test application functionality; used in Jenkins Test phase
-    - `requirements.txt` Required packages for python application
-    - `urls.json` Test URLS for application testing
-    - `Jenkinsfile` Configuration file used by Jenkins to run a pipeline
-    - `README.md` README documentation
-    - `Documentation.md` Documentation on how to run the deployment
-    - `static/` Folder housing CSS files
-    - `templates/` Folder housing HTML templates
-    - `artifacts/` Folder housing deployment artifacts
+- `application.py` The main python application file
+- `test_app.py` Tests used to test application functionality; used in Jenkins Test phase
+- `requirements.txt` Required packages for python application
+- `urls.json` Test URLS for application testing
+- `Jenkinsfile` Configuration file used by Jenkins to run a pipeline
+- `README.md` README documentation
+- `Documentation.md` Documentation on how to run the deployment
+- `static/` Folder housing CSS files
+- `templates/` Folder housing HTML templates
+- `artifacts/` Folder housing deployment artifacts
 
 # Steps:
 
