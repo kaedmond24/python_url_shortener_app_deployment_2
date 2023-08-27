@@ -101,3 +101,7 @@ CI/CD Pipeline Architecture [Link](https://github.com/kaedmond24/python_url_shor
 No Issues Found
 
 # Optimization:
+
+1. This deployment pipeline could be more efficient by implementing an automated process for storing created artifacts in a location with more accessibility such as AWS s3 bucket or Github. That would allow for easier collaboration with other people or services involved with the project.
+
+2. An automated solution for deploying artifacts into a production environment within Jenkins would allow for more efficiency and less risk for error vs manually completing the process.
