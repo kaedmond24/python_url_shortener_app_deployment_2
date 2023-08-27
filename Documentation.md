@@ -52,6 +52,13 @@ The following files are needed to run this deployment:
 
 4. Update Jenkinsfile with Zip configuration
 
+   - In the deployment repo, navigate to the Jenkins file
+   - The deployemnt zip file requires the needed application files to run successfuly in AWS Elastic Beanstalk. The required files include application.py, test_app.py, URLS.json, and folders static and templates.
+   - Under the Deliver stage, configure the glob option for the Zip command:
+     - `glob: 'static/**, templates/**, *.py, *.txt, *.json'`
+   - The _Pipeline Utility Step_ plugin's _Zip_ command _glob_ option is used to create a zip file inclusive of the files and/or folders for this option. The arguments must be input as a string with each item seperated by a comma.
+     ![pipeline_zip_1](images/pipeline_zip_1.png)<br>
+
 5. Run Pipeline
 
    - Select Build Now
