@@ -27,7 +27,7 @@ The following files are needed to run this deployment:
    - Install Jenkins Server using instructions at this [link](https://pkg.jenkins.io/debian/)
    - Install required version of python:
      - `sudo apt install python3.10-venv`
-   - Browse to http://<instance public IP>:8080 to access the Jenkins server
+   - Browse to http://`<instance public IP>`:8080 to access the Jenkins server
      - Follow on-screen instructions to complete initial login
 
 2. Setup Pipeline Utility Steps plugin for Jenkins
@@ -39,11 +39,11 @@ The following files are needed to run this deployment:
 
 3. Setup Pipeline
 
-   - From Dashboard, select a new item > Create Name > Pipeline option
-   - Under Pipeline, set Definition to ‘Pipeline script from SCM’ option
-   - Set SCM to Git
+   - From Dashboard, select a _new item_ > _Create Name_ > _Pipeline_ option
+   - Under Pipeline, set Definition to _Pipeline script from SCM_ option
+   - Set SCM to _Git_
    - Repositories
-     - Repository URL: <Github Repo URL>
+     - Repository URL: `<Github Repo URL>`
      - Credentials: [How to setup Github Access Token](https://docs.github.com/en/enterprise-server@3.8/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
    - Branches to build
      - Branch Specifier: \*/main
@@ -71,7 +71,8 @@ The following files are needed to run this deployment:
 
    - On local machine, open a terminal
    - Use the secure copy command to copy zip file to local machine repo folder
-     - `scp -i /path/to/ec2_keypair.pem user@<ec2 public IP>:/var/lib/jenkins/workspace/python_url_shortener_app_deployment_2/build/1.0.0.7.zip /home/<local machine user>/path/to/local repo/`
+     - `scp -i /path/to/ec2_keypair.pem user@<ec2 public IP>:/var/lib/jenkins/workspace/python_url_shortener_app_deployment_2/build/1.0.0.7.zip /home/<local machine user>/path/to/local repo/artifacts/`
+   - Push updates to Github
 
 7. Deploy to AWS Elastic Beanstalk
 
